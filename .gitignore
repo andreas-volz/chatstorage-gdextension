@@ -1,69 +1,62 @@
-# Prerequisites
-*.d
+# Godot auto generated files
+*.gen.*
+.godot/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Ignore library files but not the gdextension file
+demo/bin/*
+!demo/bin/android
+demo/bin/android/*
+!demo/bin/android/.gitkeep
+!demo/bin/linux
+demo/bin/linux/*
+!demo/bin/linux/.gitkeep
+!demo/bin/macos
+demo/bin/macos/*
+!demo/bin/macos/.gitkeep
+!demo/bin/windows
+demo/bin/windows/*
+!demo/bin/windows/.gitkeep
+!demo/bin/*.gdextension
+.sconsign*.dblite
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore custom.py
+custom.py
 
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
-
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
+# Ignore generated compile_commands.json
 compile_commands.json
 
-# Temporary files
-*.tmp
+# Ignore files generated for documentation
+/src/gen
+
+# Binaries
+*.o
+*.os
+*.so
+*.obj
+*.bc
+*.pyc
+*.dblite
+*.pdb
+*.lib
+*.config
+*.creator
+*.creator.user
+*.files
+*.includes
+*.idb
+*.exp
+
+# Other stuff
 *.log
-*.bak
-*.swp
 
-# vcpkg
-vcpkg_installed/
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
 
-# debug information files
-*.dwo
+# Jetbrains
+.idea/
 
-# test output & cache
-Testing/
-.cache/
+# Cmake
+cmake-build*
+CMakeUserPresets.json
